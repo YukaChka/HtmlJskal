@@ -1,8 +1,17 @@
 
 function KvadratCAL(){
-    var result
-    var Kv1 = Number(document.getElementById("Kv1").value); 
-    var Kv2 = Number(document.getElementById("Kv2").value); 
-    result = Kv1 + Kv2
-    document.getElementById("result").value = result;
+    
+    var Kv1 = document.getElementById("Kv1").value; 
+    var Kv2 = document.getElementById("Kv2").value;  
+    var Kv3 = document.getElementById("Kv3").value;
+
+    const D = Kv2**2-4 * Kv1 * Kv3 
+
+    document.getElementById("result").innerText = (parseInt(-Kv2,10)+parseInt(Math.sqrt(D),10))/(2*parseInt(Kv1,10));
+    document.getElementById("result2").innerText = (parseInt(-Kv2,10)-parseInt(Math.sqrt(D),10))/(2*parseInt(Kv1,10));
+  
+}   
+
+function SinCosTg(){
+    
 }
