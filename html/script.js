@@ -14,7 +14,12 @@ function KvadratCAL(){
 
 function SinCosTg(){
     var SKTValue = document.getElementById("selectvalueSKT").value;
+    var SKT = document.getElementById("SKT").value;
     if(SKTValue = 1){
-
+        
+        
+        
+        console.log(SKT)
+        document.getElementById("resultSKT").innerText = (parseInt(SKT/57,10)-parseInt(SKT/57**3,10))/(parseInt(3*2*1,10)) + (parseInt(SKT/57**5,10))/(parseInt(5*4*3*2*1,10)) - (parseInt(SKT/57**7,10))/(parseInt(7*6*5*4*3*2*1,10)) ;
     }
 }
